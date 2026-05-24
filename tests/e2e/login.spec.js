@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
 
 test("user can log in with valid credentials", async ({ page }) => {
+	test.skip(!process.env.E2E_EMAIL || !process.env.E2E_PASSWORD, "Missing login env vars");
+
 	await page.goto("/login/");
 
 	await page.getByPlaceholder("Email").fill(process.env.E2E_EMAIL);
