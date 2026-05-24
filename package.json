@@ -26,6 +26,7 @@
 		"@playwright/test": "^1.60.0",
 		"@types/node": "^25.9.1",
 		"@vitest/ui": "^4.1.7",
+		"dotenv": "^17.4.2",
 		"eslint": "^10.4.0",
 		"globals": "^17.6.0",
 		"husky": "^9.1.7",
